@@ -8,10 +8,12 @@ import io
 def pdfparser(data):
 
     fp = open(data, 'rb')
-    rsrcmgr = PDFResourceManager()
-    retstr = io.StringIO()
+    rsrcmgr = PDFResourceManager() #to store shared resources such as fonts or images
+    retstr = io.StringIO() # Cast to StringIO object
     codec = 'utf-8'
+    # Set parameters for analysis.
     laparams = LAParams()
+    # Create a PDF device object
     device = TextConverter(rsrcmgr, retstr, laparams=laparams)
     # Create a PDF interpreter object.
     interpreter = PDFPageInterpreter(rsrcmgr, device)
@@ -20,8 +22,6 @@ def pdfparser(data):
         for page in PDFPage.get_pages(fp):
             interpreter.process_page(page)
             data =  retstr.getvalue()
-
-        #print(data)
         f.write(data)
     print("done")
 
