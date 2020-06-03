@@ -1,0 +1,147 @@
+﻿{"intents": [
+ 
+       {"tag": "greeting",
+  
+       "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+ 
+        "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+  
+       "context_set": [""]
+ 
+       },
+
+
+        {"tag": "NAS",
+   
+      "patterns": ["What is NAS", "which protocol is used by the  NAS  to authenticate the user"],
+      
+   "responses": ["Network Access Server used to authenticate and  provide access to the network", "RADIUS protocol"],
+   
+      "context_set": [""]
+  
+      },
+
+
+       {"tag": "AirGroup",
+   
+      "patterns": ["What is the use of airgroup","Why is airgroup used?"],
+    
+     "responses": ["AirGroup allows users to register their personal mobile devices on the local network and define a group of friends or associates who are allowed to share them."],
+   
+      "context": [""]
+ 
+       },
+  
+
+      {"tag": "DynamicAuthorisation",
+  
+       "patterns": ["what does dynamic authorisation mean?", "what is dynamic authorisation", "what do you mean by dynamic authorisation?"],
+  
+       "responses": ["Dynamic Authorization describes the ability to make changes to a guest account’s session while it is in progress."],
+ 
+        "context_set":[""]
+  
+      },
+
+  
+      {"tag": "ClearPassGuest",
+   
+      "patterns": ["Which standard the clearpass Guest is built on?","Which network connectivity is provisioned for Clearpass Guest?"],
+   
+      "responses": ["AAA framework which consisting on authentication,authorization, and accounting components","VLAN selection, IP address, and hostname"],
+  
+       "context": [""]
+   
+     },
+  
+
+      {"tag":"server",
+   
+      "patterns":["Is Windows Server 2008 Server Core appropriate for a SQL Server instance?"],
+  
+       "responses":["The Windows Server 2008 Core edition can:Run the file server role.Run the Hyper-V virtualization server role.Run the Directory Services role.Run the DHCP server role."],
+   
+      "context_set":[""]
+  
+       },
+ 
+       
+ {"tag":"API",
+   
+       "patterns":["Clearpass is extended to IT systems using which API?"],
+ 
+         "responses":["REST based API"],
+
+          "context_set":[""]
+ 
+        },
+
+
+         {"tag":"browser",
+  
+        "patterns":["Which browsers are supported for ClearPass?"],
+  
+        "responses":["Mozilla Firefox,Google Chrome,Apple safari,Microsoft Internet Explorer"],
+  
+        "context_set":[""]
+  
+       },
+ 
+
+        {"tag":"virtualization",
+   
+       "patterns":["Which  virtualization platforms  is supported by Clearpass?"],
+    
+      "responses":["VMware vSphere Hypervisor (ESXi), Microsoft Hyper V, and Amazon AWS (EC2)"],
+   
+       "context_set":[""]
+   
+      },
+  
+
+       {"tag":"authentication",
+  
+        "patterns":["name the authentication/authorization sources used by clearpass","Which are the authentication protocols used for employee access","which protocol is used by the  NAS  to authenticate the user"],
+   
+       "responses":["AD, LDAP, and SQL dB","PEAP, EAP-FAST, EAP-TLS, EAP-TTLS, and EAP-PEAP-Public","RADIUS protocol"],
+  
+        "context_set":[""]
+  
+       },
+   
+     
+ {"tag":"clearpass",
+ 
+         "patterns":["Name the identity stores supported by Clearpass?","does Clearpass use ipv6 or ipv4 addressing","what is ClearPass C1000 Hardware Appliance","how many sessioons can  be provided by ClearPass C2000 Hardware Appliance"],
+   
+       "responses":["Built-in SQL store,Built-in SQL store, static hosts list","Ipv6","It is a RADIUS/ TACACS+ server that provides advanced policy control for up to 500 simultaneous sessions.","5000 simultaneous sessions."],
+   
+       "context_set":[""]
+  
+       },
+   
+
+      {"tag": "session",
+ 
+        "patterns": ["What are the possible states of a session?", "How many states are there in a session","How many possible states can a session have?"],
+   
+      "responses": ["Active,stale,closed","A session can have 3 possible states: Active, stale, closed"],
+ 
+        "context": [""]
+   
+     },
+ 
+
+   {"tag":"cookies",
+  
+   "patterns":["What are cookies?","What are cookies used for?"],
+   
+  "responses":["Cookies are small text files that are placed on a user’s computer by Web sites the user visits","Cookies are used  to make Web sites work, or work more efficiently, as well as to provide information to the owners"],
+     "context": [""]
+ 
+   
+    }
+
+ 
+  ]
+}
