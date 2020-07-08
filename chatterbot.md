@@ -1,7 +1,6 @@
 ### **Documentation of ChatBot Built Using ChatterBot Library**
 
 **Method :** ChatBot()
-
 **Parameters** : The user name for chatbot
 **Returns** : The instance of ChatBot classes for further traning of
 data
